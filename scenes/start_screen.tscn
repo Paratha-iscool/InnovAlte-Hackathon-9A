@@ -1,0 +1,259 @@
+[gd_scene load_steps=6 format=3 uid="uid://320efnyqjvrr"]
+
+[ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="1_o7i0r"]
+[ext_resource type="Texture2D" uid="uid://c1d8eqtu1f4ds" path="res://Assets/Start Screen/Who are you right now.png" id="2_he1sj"]
+[ext_resource type="Texture2D" path="res://Assets/Hiiii 🐱🐾🐾 (Phone) (Custom).jpg" id="3_r2jwc"]
+[ext_resource type="Texture2D" path="res://Assets/cute pie.jpg" id="4_hm208"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5pab1"]
+
+[node name="Start Screen" type="Node2D"]
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(270, 480)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_o7i0r")
+
+[node name="Whoareyou" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Whoareyou"]
+position = Vector2(270, 480)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_he1sj")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 109.0
+offset_top = 261.0
+offset_right = 149.0
+offset_bottom = 301.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 2
+offset_left = -76.0
+offset_top = 27.0
+offset_right = 386.0
+offset_bottom = 443.0
+
+[node name="FlowContainer" type="FlowContainer" parent="Control"]
+layout_mode = 2
+offset_left = -76.0
+offset_top = 27.0
+offset_right = 402.0
+offset_bottom = 443.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="John Box" type="ColorRect" parent="Control/FlowContainer"]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.984314, 0.211765, 0.25098, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/FlowContainer/John Box"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/FlowContainer/John Box/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Control/FlowContainer/John Box/VBoxContainer/CenterContainer"]
+z_index = 2
+layout_mode = 2
+texture_normal = ExtResource("3_r2jwc")
+texture_pressed = ExtResource("3_r2jwc")
+texture_hover = ExtResource("3_r2jwc")
+texture_disabled = ExtResource("3_r2jwc")
+texture_focused = ExtResource("3_r2jwc")
+
+[node name="Button" type="Button" parent="Control/FlowContainer/John Box/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
+text = "John"
+
+[node name="Jack Box" type="ColorRect" parent="Control/FlowContainer"]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.984314, 0.211765, 0.25098, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/FlowContainer/Jack Box"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/FlowContainer/Jack Box/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Control/FlowContainer/Jack Box/VBoxContainer/CenterContainer"]
+z_index = 2
+layout_mode = 2
+texture_normal = ExtResource("4_hm208")
+texture_pressed = ExtResource("4_hm208")
+texture_hover = ExtResource("4_hm208")
+texture_disabled = ExtResource("4_hm208")
+texture_focused = ExtResource("4_hm208")
+
+[node name="Button" type="Button" parent="Control/FlowContainer/Jack Box/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
+text = "Jack"
+
+[node name="Jean Box" type="ColorRect" parent="Control/FlowContainer"]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.984314, 0.211765, 0.25098, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/FlowContainer/Jean Box"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/FlowContainer/Jean Box/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Control/FlowContainer/Jean Box/VBoxContainer/CenterContainer"]
+z_index = 2
+layout_mode = 2
+texture_normal = ExtResource("4_hm208")
+texture_pressed = ExtResource("4_hm208")
+texture_hover = ExtResource("4_hm208")
+texture_disabled = ExtResource("4_hm208")
+texture_focused = ExtResource("4_hm208")
+
+[node name="Button" type="Button" parent="Control/FlowContainer/Jean Box/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
+text = "Jean"
+
+[node name="John box4" type="ColorRect" parent="Control/FlowContainer"]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.984314, 0.211765, 0.25098, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/FlowContainer/John box4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/FlowContainer/John box4/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Control/FlowContainer/John box4/VBoxContainer/CenterContainer"]
+z_index = 2
+layout_mode = 2
+texture_normal = ExtResource("4_hm208")
+texture_pressed = ExtResource("4_hm208")
+texture_hover = ExtResource("4_hm208")
+texture_disabled = ExtResource("4_hm208")
+texture_focused = ExtResource("4_hm208")
+
+[node name="Button" type="Button" parent="Control/FlowContainer/John box4/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
+text = "Mike"
+
+[node name="John box5" type="ColorRect" parent="Control/FlowContainer"]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.984314, 0.211765, 0.25098, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/FlowContainer/John box5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/FlowContainer/John box5/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Control/FlowContainer/John box5/VBoxContainer/CenterContainer"]
+z_index = 2
+layout_mode = 2
+texture_normal = ExtResource("4_hm208")
+texture_pressed = ExtResource("4_hm208")
+texture_hover = ExtResource("4_hm208")
+texture_disabled = ExtResource("4_hm208")
+texture_focused = ExtResource("4_hm208")
+
+[node name="Button" type="Button" parent="Control/FlowContainer/John box5/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
+text = "Mike"
