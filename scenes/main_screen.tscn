@@ -8,18 +8,19 @@
 [node name="Background" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
-position = Vector2(540, 960)
+position = Vector2(270, 480)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_7fvvs")
 
 [node name="Boy" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Boy"]
-position = Vector2(540, 960)
+position = Vector2(270, 480)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_kusfh")
 
-[node name="Container" type="Container" parent="."]
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="TextureButton" type="TextureButton" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="TextureButton" type="TextureButton" parent="Container"]
-layout_mode = 2
