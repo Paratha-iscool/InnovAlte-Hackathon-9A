@@ -1,9 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://320efnyqjvrr"]
+[gd_scene load_steps=11 format=3 uid="uid://dydxnbuk26hn6"]
 
-[ext_resource type="Script" uid="uid://dysxpya6rhi1h" path="res://scenes/start_screen.gd" id="1_ecdxc"]
+[ext_resource type="Script" path="res://scenes/start_screen.gd" id="1_ecdxc"]
 [ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="1_o7i0r"]
 [ext_resource type="Texture2D" uid="uid://c1d8eqtu1f4ds" path="res://Assets/Start Screen/Who are you right now.png" id="2_he1sj"]
-[ext_resource type="PackedScene" uid="uid://bx3el787os28v" path="res://scenes/box_template.tscn" id="3_ka6nf"]
+[ext_resource type="PackedScene" path="res://scenes/box_template.tscn" id="3_ka6nf"]
 [ext_resource type="Texture2D" uid="uid://bm3gwe7j1nd63" path="res://Assets/Start Screen/50+ Pet Tricks you don't known _ Animal Hacks.jpg" id="4_ws7p0"]
 [ext_resource type="Texture2D" uid="uid://v4nw0amifedw" path="res://Assets/Start Screen/cute pie.jpg" id="5_ecdxc"]
 [ext_resource type="Texture2D" uid="uid://cfex6s7wuhjw0" path="res://Assets/Start Screen/cat the nerd.jpg" id="6_qls88"]
@@ -267,7 +267,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
-text = "Mike"
+text = "Micheal"
 
 [connection signal="pressed" from="Control/MarginContainer/FlowContainer/John Box/VBoxContainer/CenterContainer/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Control/MarginContainer/FlowContainer/John Box/VBoxContainer/Button" to="." method="_on_button_pressed"]

@@ -35,13 +35,44 @@ theme = ExtResource("3_gi2ox")
 text = "John (You) -"
 
 [node name="TextureButton" type="TextureButton" parent="."]
-offset_left = 220.0
-offset_top = 312.0
-offset_right = 284.0
-offset_bottom = 348.0
+offset_left = 460.0
+offset_top = 900.0
+offset_right = 524.0
+offset_bottom = 936.0
 texture_normal = ExtResource("4_kf30e")
 texture_pressed = ExtResource("5_m1hih")
 texture_hover = ExtResource("6_u4rt5")
 script = ExtResource("7_skvs2")
+
+[node name="Jean" type="Label" parent="."]
+offset_left = 35.0
+offset_top = 228.0
+offset_right = 161.0
+offset_bottom = 260.0
+rotation = -0.00442886
+theme = ExtResource("3_gi2ox")
+text = "Jean -"
+
+[node name="Jean_text" type="TextEdit" parent="."]
+offset_left = 34.0
+offset_top = 266.0
+offset_right = 496.0
+offset_bottom = 401.0
+text = "Name: Jean
+Age: 26
+Gender: Female
+Triggers: Blood, Screaming
+Likes: Desserts, Flowers
+Dislikes: Crowds"
+editable = false
+
+[node name="Mike" type="Label" parent="."]
+offset_left = 71.0094
+offset_top = 455.843
+offset_right = 197.009
+offset_bottom = 487.843
+rotation = -0.00442886
+theme = ExtResource("3_gi2ox")
+text = "Mike -"
 
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_TextureButton_pressed"]
