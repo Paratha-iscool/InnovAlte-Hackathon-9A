@@ -1,12 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbe3cktwvpggd"]
+[gd_scene load_steps=3 format=3 uid="uid://pqp5m43m0o2v"]
 
-[ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="1_gtsnk"]
+[ext_resource type="Script" uid="uid://wk780k4647vk" path="res://scenes/line.gd" id="1_gtsnk"]
+[ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="2_h0ddy"]
 
 [node name="Timeline" type="Node2D"]
 
-[node name="Background" type="Node2D" parent="."]
+[node name="Line" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 540.0
+offset_bottom = 1000.0
+script = ExtResource("1_gtsnk")
 
-[node name="Sprite2D" type="Sprite2D" parent="Background"]
+[node name="Background" type="Node2D" parent="Line"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Line/Background"]
 position = Vector2(270, 480)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_gtsnk")
+texture = ExtResource("2_h0ddy")

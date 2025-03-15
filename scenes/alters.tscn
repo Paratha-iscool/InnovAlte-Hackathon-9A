@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://bu2udxqujr4dk"]
+[gd_scene load_steps=8 format=3 uid="uid://b808f7st1w47l"]
 
 [ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="1_ah15d"]
+[ext_resource type="Script" uid="uid://djumqv8mjlc76" path="res://scenes/you.gd" id="2_k863x"]
+[ext_resource type="Theme" uid="uid://du48cwjo5bknu" path="res://Themes/Red.tres" id="3_gi2ox"]
+[ext_resource type="Texture2D" uid="uid://cwa4ylp3op5uv" path="res://Assets/goback.jpg" id="4_kf30e"]
+[ext_resource type="Texture2D" uid="uid://crc5h21p0no0n" path="res://Assets/gobackclicked.jpg" id="5_m1hih"]
+[ext_resource type="Texture2D" uid="uid://bfkt1new1u6tq" path="res://Assets/gobackhover.jpg" id="6_u4rt5"]
+[ext_resource type="Script" uid="uid://uqmjgvisfdvt" path="res://scenes/texture_button.gd" id="7_skvs2"]
 
 [node name="Alters" type="Node2D"]
 
@@ -10,3 +16,32 @@
 position = Vector2(270, 480)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_ah15d")
+
+[node name="You" type="TextEdit" parent="."]
+offset_left = 32.0
+offset_top = 47.0
+offset_right = 497.0
+offset_bottom = 210.0
+placeholder_text = "Tell your alters about yourself here."
+scroll_smooth = true
+script = ExtResource("2_k863x")
+
+[node name="You_label" type="Label" parent="."]
+offset_left = 31.0
+offset_top = 16.0
+offset_right = 91.0
+offset_bottom = 43.0
+theme = ExtResource("3_gi2ox")
+text = "John (You) -"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 220.0
+offset_top = 312.0
+offset_right = 284.0
+offset_bottom = 348.0
+texture_normal = ExtResource("4_kf30e")
+texture_pressed = ExtResource("5_m1hih")
+texture_hover = ExtResource("6_u4rt5")
+script = ExtResource("7_skvs2")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_TextureButton_pressed"]

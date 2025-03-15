@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bknxvxmgfwdp5"]
 
 [ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="1_7fvvs"]
-[ext_resource type="Script" path="res://scenes/main_screen.gd" id="1_w87pm"]
+[ext_resource type="Script" uid="uid://db0hoikwp1hjp" path="res://scenes/main_screen.gd" id="1_w87pm"]
 [ext_resource type="Texture2D" uid="uid://dmtuyfqvjv3mg" path="res://Assets/Boy/Main screen.png" id="2_kusfh"]
 [ext_resource type="Texture2D" uid="uid://cag5oxy2xt4ab" path="res://Assets/Main screen/Alter Me Logo.png" id="3_lushf"]
 [ext_resource type="Theme" uid="uid://du48cwjo5bknu" path="res://Themes/Red.tres" id="4_w87pm"]
