@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Alter" load_steps=2 format=3 uid="uid://dg3xubvyr6t22"]
+
+[ext_resource type="Script" uid="uid://itk6txjxru3b" path="res://Scripts/Alters.gd" id="1_bc1j0"]
+
+[resource]
+script = ExtResource("1_bc1j0")
+name = "John"
+characteristic = ["kind", "caring", "cool", "funny", "selfish"]
+age = 21
+gender = "Male"
+metadata/_custom_type_script = "uid://itk6txjxru3b"

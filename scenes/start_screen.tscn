@@ -1,13 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://320efnyqjvrr"]
+[gd_scene load_steps=11 format=3 uid="uid://320efnyqjvrr"]
 
+[ext_resource type="Script" uid="uid://dysxpya6rhi1h" path="res://scenes/start_screen.gd" id="1_ecdxc"]
 [ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="1_o7i0r"]
 [ext_resource type="Texture2D" uid="uid://c1d8eqtu1f4ds" path="res://Assets/Start Screen/Who are you right now.png" id="2_he1sj"]
-[ext_resource type="Texture2D" path="res://Assets/Hiiii 🐱🐾🐾 (Phone) (Custom).jpg" id="3_r2jwc"]
-[ext_resource type="Texture2D" path="res://Assets/cute pie.jpg" id="4_hm208"]
+[ext_resource type="PackedScene" uid="uid://bx3el787os28v" path="res://scenes/box_template.tscn" id="3_ka6nf"]
+[ext_resource type="Texture2D" uid="uid://bm3gwe7j1nd63" path="res://Assets/Start Screen/50+ Pet Tricks you don't known _ Animal Hacks.jpg" id="4_ws7p0"]
+[ext_resource type="Texture2D" uid="uid://v4nw0amifedw" path="res://Assets/Start Screen/cute pie.jpg" id="5_ecdxc"]
+[ext_resource type="Texture2D" uid="uid://cfex6s7wuhjw0" path="res://Assets/Start Screen/cat the nerd.jpg" id="6_qls88"]
+[ext_resource type="Texture2D" uid="uid://cd48hqbje7qi5" path="res://Assets/Start Screen/Hiiii 🐱🐾🐾 (Phone) (Custom).jpg" id="7_pcj7n"]
+[ext_resource type="Texture2D" uid="uid://deh86lhdacsx5" path="res://Assets/Start Screen/ᓚᘏᗢ.jpg" id="8_bdg0b"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5pab1"]
 
 [node name="Start Screen" type="Node2D"]
+script = ExtResource("1_ecdxc")
 
 [node name="Background" type="Node2D" parent="."]
 
@@ -23,6 +29,12 @@ position = Vector2(270, 480)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_he1sj")
 
+[node name="Box template" parent="." instance=ExtResource("3_ka6nf")]
+offset_left = 58.0
+offset_top = 288.0
+offset_right = 198.0
+offset_bottom = 428.0
+
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -31,6 +43,11 @@ offset_top = 261.0
 offset_right = 149.0
 offset_bottom = 301.0
 
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="MarginContainer" type="MarginContainer" parent="Control"]
 layout_mode = 2
 offset_left = -76.0
@@ -38,24 +55,18 @@ offset_top = 27.0
 offset_right = 386.0
 offset_bottom = 443.0
 
-[node name="FlowContainer" type="FlowContainer" parent="Control"]
+[node name="FlowContainer" type="FlowContainer" parent="Control/MarginContainer"]
 layout_mode = 2
-offset_left = -76.0
-offset_top = 27.0
-offset_right = 402.0
-offset_bottom = 443.0
-grow_horizontal = 2
-grow_vertical = 2
 alignment = 1
 
-[node name="John Box" type="ColorRect" parent="Control/FlowContainer"]
+[node name="John Box" type="ColorRect" parent="Control/MarginContainer/FlowContainer"]
 custom_minimum_size = Vector2(140, 140)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 color = Color(0.984314, 0.211765, 0.25098, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/FlowContainer/John Box"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/FlowContainer/John Box"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -64,19 +75,19 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="CenterContainer" type="CenterContainer" parent="Control/FlowContainer/John Box/VBoxContainer"]
+[node name="CenterContainer" type="CenterContainer" parent="Control/MarginContainer/FlowContainer/John Box/VBoxContainer"]
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="Control/FlowContainer/John Box/VBoxContainer/CenterContainer"]
+[node name="TextureButton" type="TextureButton" parent="Control/MarginContainer/FlowContainer/John Box/VBoxContainer/CenterContainer"]
 z_index = 2
 layout_mode = 2
-texture_normal = ExtResource("3_r2jwc")
-texture_pressed = ExtResource("3_r2jwc")
-texture_hover = ExtResource("3_r2jwc")
-texture_disabled = ExtResource("3_r2jwc")
-texture_focused = ExtResource("3_r2jwc")
+texture_normal = ExtResource("4_ws7p0")
+texture_pressed = ExtResource("4_ws7p0")
+texture_hover = ExtResource("4_ws7p0")
+texture_disabled = ExtResource("4_ws7p0")
+texture_focused = ExtResource("4_ws7p0")
 
-[node name="Button" type="Button" parent="Control/FlowContainer/John Box/VBoxContainer"]
+[node name="Button" type="Button" parent="Control/MarginContainer/FlowContainer/John Box/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
@@ -90,14 +101,14 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
 text = "John"
 
-[node name="Jack Box" type="ColorRect" parent="Control/FlowContainer"]
+[node name="Jack Box" type="ColorRect" parent="Control/MarginContainer/FlowContainer"]
 custom_minimum_size = Vector2(140, 140)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 color = Color(0.984314, 0.211765, 0.25098, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/FlowContainer/Jack Box"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/FlowContainer/Jack Box"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -106,19 +117,19 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="CenterContainer" type="CenterContainer" parent="Control/FlowContainer/Jack Box/VBoxContainer"]
+[node name="CenterContainer" type="CenterContainer" parent="Control/MarginContainer/FlowContainer/Jack Box/VBoxContainer"]
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="Control/FlowContainer/Jack Box/VBoxContainer/CenterContainer"]
+[node name="TextureButton" type="TextureButton" parent="Control/MarginContainer/FlowContainer/Jack Box/VBoxContainer/CenterContainer"]
 z_index = 2
 layout_mode = 2
-texture_normal = ExtResource("4_hm208")
-texture_pressed = ExtResource("4_hm208")
-texture_hover = ExtResource("4_hm208")
-texture_disabled = ExtResource("4_hm208")
-texture_focused = ExtResource("4_hm208")
+texture_normal = ExtResource("5_ecdxc")
+texture_pressed = ExtResource("5_ecdxc")
+texture_hover = ExtResource("5_ecdxc")
+texture_disabled = ExtResource("5_ecdxc")
+texture_focused = ExtResource("5_ecdxc")
 
-[node name="Button" type="Button" parent="Control/FlowContainer/Jack Box/VBoxContainer"]
+[node name="Button" type="Button" parent="Control/MarginContainer/FlowContainer/Jack Box/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
@@ -132,14 +143,14 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
 text = "Jack"
 
-[node name="Jean Box" type="ColorRect" parent="Control/FlowContainer"]
+[node name="Jean Box" type="ColorRect" parent="Control/MarginContainer/FlowContainer"]
 custom_minimum_size = Vector2(140, 140)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 color = Color(0.984314, 0.211765, 0.25098, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/FlowContainer/Jean Box"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/FlowContainer/Jean Box"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -148,19 +159,19 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="CenterContainer" type="CenterContainer" parent="Control/FlowContainer/Jean Box/VBoxContainer"]
+[node name="CenterContainer" type="CenterContainer" parent="Control/MarginContainer/FlowContainer/Jean Box/VBoxContainer"]
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="Control/FlowContainer/Jean Box/VBoxContainer/CenterContainer"]
+[node name="TextureButton" type="TextureButton" parent="Control/MarginContainer/FlowContainer/Jean Box/VBoxContainer/CenterContainer"]
 z_index = 2
 layout_mode = 2
-texture_normal = ExtResource("4_hm208")
-texture_pressed = ExtResource("4_hm208")
-texture_hover = ExtResource("4_hm208")
-texture_disabled = ExtResource("4_hm208")
-texture_focused = ExtResource("4_hm208")
+texture_normal = ExtResource("6_qls88")
+texture_pressed = ExtResource("6_qls88")
+texture_hover = ExtResource("6_qls88")
+texture_disabled = ExtResource("6_qls88")
+texture_focused = ExtResource("6_qls88")
 
-[node name="Button" type="Button" parent="Control/FlowContainer/Jean Box/VBoxContainer"]
+[node name="Button" type="Button" parent="Control/MarginContainer/FlowContainer/Jean Box/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
@@ -174,14 +185,14 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
 text = "Jean"
 
-[node name="John box4" type="ColorRect" parent="Control/FlowContainer"]
+[node name="John box4" type="ColorRect" parent="Control/MarginContainer/FlowContainer"]
 custom_minimum_size = Vector2(140, 140)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 color = Color(0.984314, 0.211765, 0.25098, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/FlowContainer/John box4"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/FlowContainer/John box4"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -190,19 +201,19 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="CenterContainer" type="CenterContainer" parent="Control/FlowContainer/John box4/VBoxContainer"]
+[node name="CenterContainer" type="CenterContainer" parent="Control/MarginContainer/FlowContainer/John box4/VBoxContainer"]
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="Control/FlowContainer/John box4/VBoxContainer/CenterContainer"]
+[node name="TextureButton" type="TextureButton" parent="Control/MarginContainer/FlowContainer/John box4/VBoxContainer/CenterContainer"]
 z_index = 2
 layout_mode = 2
-texture_normal = ExtResource("4_hm208")
-texture_pressed = ExtResource("4_hm208")
-texture_hover = ExtResource("4_hm208")
-texture_disabled = ExtResource("4_hm208")
-texture_focused = ExtResource("4_hm208")
+texture_normal = ExtResource("7_pcj7n")
+texture_pressed = ExtResource("7_pcj7n")
+texture_hover = ExtResource("7_pcj7n")
+texture_disabled = ExtResource("7_pcj7n")
+texture_focused = ExtResource("7_pcj7n")
 
-[node name="Button" type="Button" parent="Control/FlowContainer/John box4/VBoxContainer"]
+[node name="Button" type="Button" parent="Control/MarginContainer/FlowContainer/John box4/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
@@ -216,14 +227,14 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
 text = "Mike"
 
-[node name="John box5" type="ColorRect" parent="Control/FlowContainer"]
+[node name="John box5" type="ColorRect" parent="Control/MarginContainer/FlowContainer"]
 custom_minimum_size = Vector2(140, 140)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 color = Color(0.984314, 0.211765, 0.25098, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/FlowContainer/John box5"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/FlowContainer/John box5"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -232,19 +243,19 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="CenterContainer" type="CenterContainer" parent="Control/FlowContainer/John box5/VBoxContainer"]
+[node name="CenterContainer" type="CenterContainer" parent="Control/MarginContainer/FlowContainer/John box5/VBoxContainer"]
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="Control/FlowContainer/John box5/VBoxContainer/CenterContainer"]
+[node name="TextureButton" type="TextureButton" parent="Control/MarginContainer/FlowContainer/John box5/VBoxContainer/CenterContainer"]
 z_index = 2
 layout_mode = 2
-texture_normal = ExtResource("4_hm208")
-texture_pressed = ExtResource("4_hm208")
-texture_hover = ExtResource("4_hm208")
-texture_disabled = ExtResource("4_hm208")
-texture_focused = ExtResource("4_hm208")
+texture_normal = ExtResource("8_bdg0b")
+texture_pressed = ExtResource("8_bdg0b")
+texture_hover = ExtResource("8_bdg0b")
+texture_disabled = ExtResource("8_bdg0b")
+texture_focused = ExtResource("8_bdg0b")
 
-[node name="Button" type="Button" parent="Control/FlowContainer/John box5/VBoxContainer"]
+[node name="Button" type="Button" parent="Control/MarginContainer/FlowContainer/John box5/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
@@ -257,3 +268,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
 text = "Mike"
+
+[connection signal="pressed" from="Control/MarginContainer/FlowContainer/John Box/VBoxContainer/CenterContainer/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/FlowContainer/John Box/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/FlowContainer/Jack Box/VBoxContainer/CenterContainer/TextureButton" to="." method="_on_texture_button_pressed"]

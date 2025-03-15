@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx3el787os28v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5pab1"]
+
+[node name="Box template" type="ColorRect"]
+custom_minimum_size = Vector2(140, 140)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.984314, 0.211765, 0.25098, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Texture" type="TextureButton" parent="VBoxContainer/CenterContainer"]
+z_index = 2
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")

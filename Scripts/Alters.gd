@@ -1,5 +1,6 @@
-# Person.gd (Resource script)
+
 extends Resource
+class_name Alter
 
 @export var name: String = ""
 @export var characteristic : Array = []
