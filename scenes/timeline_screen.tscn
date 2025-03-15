@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cf34q4suwjdik"]
+[gd_scene load_steps=2 format=3 uid="uid://cf34q4suwjdik"]
+
+[ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="1_wg6qt"]
 
 [node name="TimelineScreen" type="Node2D"]
 
@@ -7,3 +9,10 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 541.0
 offset_bottom = 1000.0
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(270, 480)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_wg6qt")
