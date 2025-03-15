@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bknxvxmgfwdp5"]
+
+[ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="1_7fvvs"]
+[ext_resource type="Texture2D" uid="uid://dmtuyfqvjv3mg" path="res://Assets/Boy/Main screen.png" id="2_kusfh"]
+
+[node name="Main screen" type="Node2D"]
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(540, 960)
+texture = ExtResource("1_7fvvs")
+
+[node name="Boy" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Boy"]
+position = Vector2(540, 960)
+texture = ExtResource("2_kusfh")
