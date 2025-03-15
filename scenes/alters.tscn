@@ -17,23 +17,6 @@ position = Vector2(270, 480)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_ah15d")
 
-[node name="You" type="TextEdit" parent="."]
-offset_left = 32.0
-offset_top = 47.0
-offset_right = 497.0
-offset_bottom = 210.0
-placeholder_text = "Tell your alters about yourself here."
-scroll_smooth = true
-script = ExtResource("2_k863x")
-
-[node name="You_label" type="Label" parent="."]
-offset_left = 31.0
-offset_top = 16.0
-offset_right = 91.0
-offset_bottom = 43.0
-theme = ExtResource("3_gi2ox")
-text = "John (You) -"
-
 [node name="TextureButton" type="TextureButton" parent="."]
 offset_left = 460.0
 offset_top = 900.0
@@ -44,20 +27,59 @@ texture_pressed = ExtResource("5_m1hih")
 texture_hover = ExtResource("6_u4rt5")
 script = ExtResource("7_skvs2")
 
+[node name="You" type="Label" parent="."]
+offset_left = 31.0
+offset_top = 16.0
+offset_right = 91.0
+offset_bottom = 43.0
+theme = ExtResource("3_gi2ox")
+text = "John (You) -"
+
+[node name="You_text" type="TextEdit" parent="."]
+offset_left = 32.0
+offset_top = 47.0
+offset_right = 497.0
+offset_bottom = 210.0
+placeholder_text = "Tell your alters about yourself here."
+scroll_smooth = true
+script = ExtResource("2_k863x")
+
+[node name="Jack" type="Label" parent="."]
+offset_left = 37.0
+offset_top = 241.0
+offset_right = 163.0
+offset_bottom = 273.0
+rotation = -0.00442886
+theme = ExtResource("3_gi2ox")
+text = "Jack -"
+
+[node name="Jack_text" type="TextEdit" parent="."]
+offset_left = 31.0
+offset_top = 283.0
+offset_right = 493.0
+offset_bottom = 374.0
+text = "Name: Jack
+Age: 15
+Gender: Male
+Triggers: Flowers
+Likes: Guitars
+Dislikes: Fruits"
+editable = false
+
 [node name="Jean" type="Label" parent="."]
-offset_left = 35.0
-offset_top = 228.0
-offset_right = 161.0
-offset_bottom = 260.0
+offset_left = 36.0
+offset_top = 409.0
+offset_right = 162.0
+offset_bottom = 441.0
 rotation = -0.00442886
 theme = ExtResource("3_gi2ox")
 text = "Jean -"
 
 [node name="Jean_text" type="TextEdit" parent="."]
-offset_left = 34.0
-offset_top = 266.0
-offset_right = 496.0
-offset_bottom = 401.0
+offset_left = 32.0
+offset_top = 458.0
+offset_right = 494.0
+offset_bottom = 549.0
 text = "Name: Jean
 Age: 26
 Gender: Female
@@ -67,12 +89,48 @@ Dislikes: Crowds"
 editable = false
 
 [node name="Mike" type="Label" parent="."]
-offset_left = 71.0094
-offset_top = 455.843
-offset_right = 197.009
-offset_bottom = 487.843
+offset_left = 32.0
+offset_top = 575.0
+offset_right = 158.0
+offset_bottom = 607.0
 rotation = -0.00442886
 theme = ExtResource("3_gi2ox")
 text = "Mike -"
+
+[node name="Mike_text" type="TextEdit" parent="."]
+offset_left = 34.0
+offset_top = 616.0
+offset_right = 496.0
+offset_bottom = 707.0
+text = "Name: Mike
+Age: 34
+Gender: Male
+Triggers: Gauze wrap, Cuts
+Likes: Sleeping
+Dislikes: Loud noises
+"
+editable = false
+
+[node name="Micheal" type="Label" parent="."]
+offset_left = 38.0
+offset_top = 738.0
+offset_right = 164.0
+offset_bottom = 770.0
+rotation = -0.00442886
+theme = ExtResource("3_gi2ox")
+text = "Micheal -"
+
+[node name="Micheal_text" type="TextEdit" parent="."]
+offset_left = 34.0
+offset_top = 782.0
+offset_right = 496.0
+offset_bottom = 873.0
+text = "Name: Micheal
+Age: 9
+Gender: Male
+Triggers: Human-like shadows
+Likes: Soft toys
+Dislikes: Heights"
+editable = false
 
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_TextureButton_pressed"]
