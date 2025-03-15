@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bw5iqj42o1dk6"]
+[gd_scene load_steps=9 format=3 uid="uid://bw5iqj42o1dk6"]
 
 [ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="1_xf1e7"]
 [ext_resource type="Texture2D" uid="uid://tioe5x3nbr2f" path="res://Assets/Boy/To do.png" id="2_5c4ee"]
+[ext_resource type="Script" path="res://scenes/control.gd" id="3_2t34a"]
+[ext_resource type="Script" path="res://scenes/v_box_container.gd" id="4_rlbqf"]
+[ext_resource type="Theme" uid="uid://du48cwjo5bknu" path="res://Themes/Red.tres" id="5_vvyot"]
+[ext_resource type="Texture2D" uid="uid://cbp75ondaqexv" path="res://Assets/to do/Who are you right now.png" id="6_ipkct"]
+[ext_resource type="Texture2D" uid="uid://bountnjaxlhug" path="res://Assets/Boy/goback.jpg" id="7_2um16"]
+[ext_resource type="Script" path="res://scenes/TextureButton.gd" id="8_uq0ol"]
 
 [node name="Todo" type="Node2D"]
 
@@ -24,15 +30,49 @@ offset_left = 22.0
 offset_top = 98.0
 offset_right = 421.0
 offset_bottom = 748.0
+script = ExtResource("3_2t34a")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 40.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("4_rlbqf")
+
+[node name="TaskList" type="VBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 8
+
+[node name="TaskInput" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_vvyot")
+
+[node name="AddButton" type="Button" parent="Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_vvyot")
+text = "Add!"
+
+[node name="WhoAreYouRightNow" type="Sprite2D" parent="."]
+position = Vector2(270, 480)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_ipkct")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 21.0
+offset_top = 894.0
+offset_right = 85.0
+offset_bottom = 960.0
+texture_normal = ExtResource("7_2um16")
+texture_pressed = ExtResource("7_2um16")
+texture_hover = ExtResource("7_2um16")
+texture_disabled = ExtResource("7_2um16")
+texture_focused = ExtResource("7_2um16")
+script = ExtResource("8_uq0ol")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

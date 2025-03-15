@@ -97,11 +97,6 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="Info" type="Button" parent="Label/VBoxContainer/MarginContainer3"]
-layout_mode = 2
-theme = ExtResource("4_w87pm")
-text = "Info"
-
 [node name="MarginContainer4" type="MarginContainer" parent="Label/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 20
@@ -109,13 +104,6 @@ theme_override_constants/margin_top = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20
 
-[node name="Timeline" type="Button" parent="Label/VBoxContainer/MarginContainer4"]
-layout_mode = 2
-theme = ExtResource("4_w87pm")
-text = "Timeline"
-
 [connection signal="pressed" from="Label/VBoxContainer/MarginContainer/Talk" to="." method="_on_talk_pressed"]
 [connection signal="pressed" from="Label/VBoxContainer/MarginContainer5/To Do" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Label/VBoxContainer/MarginContainer2/Alters" to="." method="_on_alters_pressed"]
-[connection signal="pressed" from="Label/VBoxContainer/MarginContainer3/Info" to="." method="_on_info_pressed"]
-[connection signal="pressed" from="Label/VBoxContainer/MarginContainer4/Timeline" to="." method="_on_timeline_pressed"]

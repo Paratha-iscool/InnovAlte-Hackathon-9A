@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Alter-me"
-run/main_scene="uid://320efnyqjvrr"
-config/features=PackedStringArray("4.4", "Mobile")
+run/main_scene="res://scenes/start_screen.tscn"
+config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
 [display]
@@ -23,4 +23,3 @@ window/size/viewport_height=1000
 [rendering]
 
 renderer/rendering_method="mobile"
-textures/vram_compression/import_etc2_astc=true

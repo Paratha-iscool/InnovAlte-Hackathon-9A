@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://320efnyqjvrr"]
 
-[ext_resource type="Script" uid="uid://dysxpya6rhi1h" path="res://scenes/start_screen.gd" id="1_ecdxc"]
+[ext_resource type="Script" path="res://scenes/start_screen.gd" id="1_ecdxc"]
 [ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="1_o7i0r"]
 [ext_resource type="Texture2D" uid="uid://c1d8eqtu1f4ds" path="res://Assets/Start Screen/Who are you right now.png" id="2_he1sj"]
 [ext_resource type="PackedScene" uid="uid://bx3el787os28v" path="res://scenes/box_template.tscn" id="3_ka6nf"]
@@ -89,16 +89,11 @@ texture_focused = ExtResource("4_ws7p0")
 
 [node name="Button" type="Button" parent="Control/MarginContainer/FlowContainer/John Box/VBoxContainer"]
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
 text = "John"
 
 [node name="Jack Box" type="ColorRect" parent="Control/MarginContainer/FlowContainer"]
@@ -131,16 +126,11 @@ texture_focused = ExtResource("5_ecdxc")
 
 [node name="Button" type="Button" parent="Control/MarginContainer/FlowContainer/Jack Box/VBoxContainer"]
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
 text = "Jack"
 
 [node name="Jean Box" type="ColorRect" parent="Control/MarginContainer/FlowContainer"]
@@ -173,16 +163,11 @@ texture_focused = ExtResource("6_qls88")
 
 [node name="Button" type="Button" parent="Control/MarginContainer/FlowContainer/Jean Box/VBoxContainer"]
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
 text = "Jean"
 
 [node name="John box4" type="ColorRect" parent="Control/MarginContainer/FlowContainer"]
@@ -215,16 +200,11 @@ texture_focused = ExtResource("7_pcj7n")
 
 [node name="Button" type="Button" parent="Control/MarginContainer/FlowContainer/John box4/VBoxContainer"]
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
 text = "Mike"
 
 [node name="John box5" type="ColorRect" parent="Control/MarginContainer/FlowContainer"]
@@ -257,16 +237,11 @@ texture_focused = ExtResource("8_bdg0b")
 
 [node name="Button" type="Button" parent="Control/MarginContainer/FlowContainer/John box5/VBoxContainer"]
 layout_mode = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5pab1")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5pab1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5pab1")
 text = "Mike"
 
 [connection signal="pressed" from="Control/MarginContainer/FlowContainer/John Box/VBoxContainer/CenterContainer/TextureButton" to="." method="_on_texture_button_pressed"]

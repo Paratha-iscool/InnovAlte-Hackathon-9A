@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmykimbwcd1kq"
-path="res://.godot/imported/send.png-0ee4d7433a531f2b31b8530b82749a8f.ctex"
+uid="uid://cbp75ondaqexv"
+path="res://.godot/imported/Who are you right now.png-80d03c94f1d1d323dfef8d60ba2d7f88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Talk/send.png"
-dest_files=["res://.godot/imported/send.png-0ee4d7433a531f2b31b8530b82749a8f.ctex"]
+source_file="res://Assets/to do/Who are you right now.png"
+dest_files=["res://.godot/imported/Who are you right now.png-80d03c94f1d1d323dfef8d60ba2d7f88.ctex"]
 
 [params]
 

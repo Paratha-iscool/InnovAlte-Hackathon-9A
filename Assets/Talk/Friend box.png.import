@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmykimbwcd1kq"
-path="res://.godot/imported/send.png-0ee4d7433a531f2b31b8530b82749a8f.ctex"
+uid="uid://bfflpjvf7hl8x"
+path="res://.godot/imported/Friend box.png-8dd92df1b26dc1fadade8a5bd2354790.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Talk/send.png"
-dest_files=["res://.godot/imported/send.png-0ee4d7433a531f2b31b8530b82749a8f.ctex"]
+source_file="res://Assets/Talk/Friend box.png"
+dest_files=["res://.godot/imported/Friend box.png-8dd92df1b26dc1fadade8a5bd2354790.ctex"]
 
 [params]
 

@@ -13,7 +13,7 @@ func _on_info_pressed() -> void:
 
 
 func _on_timeline_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/alters.tscn")
+	get_tree().change_scene_to_file("res://scenes/timeline.tscn")
 
 
 func _on_talk_pressed() -> void:
