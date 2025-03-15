@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://tqra8hrjea5x"]
 
 [node name="button_scene" type="Node2D"]
+
+[node name="Child1" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
