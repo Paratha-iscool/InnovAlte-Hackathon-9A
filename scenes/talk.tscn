@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b5sp13pb7ufea"]
+[gd_scene load_steps=6 format=3 uid="uid://b5sp13pb7ufea"]
 
 [ext_resource type="Texture2D" uid="uid://wmp1nwo667g3" path="res://background.png" id="1_1asqh"]
+[ext_resource type="Script" uid="uid://ce3day3l3bwk6" path="res://scenes/talk.gd" id="1_pglng"]
+[ext_resource type="Texture2D" uid="uid://3g7l6r4ij53r" path="res://Assets/Boy/Talk.png" id="2_qqymj"]
+[ext_resource type="Texture2D" uid="uid://dplbv7kukqemo" path="res://Assets/Talk/Friend text box.png" id="3_gfpch"]
+[ext_resource type="Texture2D" uid="uid://5bupx7aut7er" path="res://Assets/Talk/You text box.png" id="4_pglng"]
 
 [node name="Talk" type="Node2D"]
+script = ExtResource("1_pglng")
 
 [node name="Background" type="Node2D" parent="."]
 
@@ -10,3 +15,30 @@
 position = Vector2(270, 480)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_1asqh")
+
+[node name="Talk" type="Sprite2D" parent="."]
+position = Vector2(270, 480)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_qqymj")
+
+[node name="FriendTextBox" type="Sprite2D" parent="."]
+position = Vector2(270, 480)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_gfpch")
+
+[node name="YouTextBox" type="Sprite2D" parent="."]
+position = Vector2(270, 480)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_pglng")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 231.0
+offset_top = 104.0
+offset_right = 509.0
+offset_bottom = 266.0
+
+[node name="QuestionInput" type="LineEdit" parent="."]
+offset_left = 231.0
+offset_top = 104.0
+offset_right = 299.563
+offset_bottom = 135.0
